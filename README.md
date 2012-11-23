@@ -3,6 +3,8 @@ PHP Graphs
 
 Class to generate PHP graphs with GD library
 
+
+
 ![Alt text](http://grafy.zaachi.com/images/g95.png "Optional title")
 ![Alt text](http://grafy.zaachi.com/images/g112.png "Optional title")
 ![Alt text](http://grafy.zaachi.com/images/g103.png "Optional title")
@@ -40,7 +42,7 @@ Anti-Aliasing in Graphs
 
 You can enable antialiasing in graphs: 
 
-![Alt text](http://grafy.zaachi.com/images/146.png "Optional title")
+![Alt text](http://grafy.zaachi.com/images/g146.png "Optional title")
 
 	$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
 	$new->enable_aliasing();
