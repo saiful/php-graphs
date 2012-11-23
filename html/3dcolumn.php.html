@@ -1,0 +1,284 @@
+<h1>3D column graph</h1>
+<table width="98%" >
+<tr><th width="50%">Source</th><th>Image</th></tr>
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2, 1), 0, 'blue' );
+$new->column_padding = 10;
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g83.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9), 0, 'blue' );
+$new->set_values( array( 2, 3, 1, 2, 3, 4, 3, 4, 5), 0, 'green' );
+$new->column_padding = 5;
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g84.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9), 0, 'blue' );
+$new->set_values( array( 2, 3, 1, 2, 3, 4, 3, 4, 5), 0, 'green' );
+$new->column_padding = 5;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g85.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( -1, -2, -3, -4, -5, -6, -7, -8, -9), 0, 'blue' );
+$new->column_padding = 5;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g86.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9), 0, 'blue' );
+$new->column_padding = 5;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array('sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'));
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g87.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9), 0, 'blue' );
+$new->set_values( array( 2, 3, 1, 2, 3, 4, 3, 4, 5), 0, 'gold' );
+$new->column_padding = 10;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array('sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'));
+$new->legend( 'top', array('blue' => 'blue color', 'gold' => 'gold color'), 'white', '#fff8dc');            
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g88.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9), 0, 'blue' );
+$new->set_values( array( -2, -1, 0, 1, 2, 3, 4, 5, 6), 0, 'gold' );
+$new->column_padding = 10;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array('sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'));
+$new->legend( 'top', array('blue' => 'blue color', 'gold' => 'gold color'), 'white', '#fff8dc');         
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g89.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2), 0, 'gold' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g90.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 5, 4, 3, 2, 1), 0, 'blue' );
+$new->set_values( array( 4, 3, 2, 1, 0), 0, 'gold' );
+$new->set_values( array( 6, 5, 4, 3, 2), 0, 'green' );
+$new->set_values( array( 6, 5, 4, 3, 2), 0, 'red' );
+$new->column_padding = 1;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g91.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+                           
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 5, 4, 3, 2, 1), 0, 'blue' );
+$new->column_padding = 0;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g92.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 5, 4), 0, 'blue' );
+$new->set_values( array( 7, 6), 0, 'red' );
+$new->column_padding = 10;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array('capital increase', 'security capital'));
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g93.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->set_values( array( 7, 7, 7, 6, 6, 5, 5, 5, 4, 3, 4, 5), 0, 'blue' );
+$new->set_values( array( 7, 6, 3, 2, 4, 5, 3, 2, 2, 3, 4, 2), 0, 'red' );
+$new->column_padding = 14;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array());
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g94.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Column Graph', '#000000', 7);
+$new->title('A capital is the area of a country regarded as enjoying primary status; it is almost always the city which physically encompasses the offices and meeting places of the seat of government and fixed by law, but there are a number of exceptions.', '#000000', 2);
+$new->set_values( array( 5, 4), 0, 'blue' );
+$new->set_values( array( 7, 6), 0, 'red' );
+$new->column_padding = 10;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array('capital increase', 'security capital'));
+$new->legend( 'left', array('blue' => 'Today', 'red' => 'Yesterday'), 'white', 'black');            
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g95.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+</table>

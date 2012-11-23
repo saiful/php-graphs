@@ -1,0 +1,278 @@
+<h1>Pie Graph</h1>
+<table width="98%" >
+<tr><th width="50%">Source</th><th>Image</th></tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->title('A pie chart (or a circle graph) is a circular chart divided into sectors, illustrating relative magnitudes or frequencies or percents.','#800000',3);
+$new->set_values( 1, 0, 'red');
+$new->set_values( 3, 0, 'green');
+$new->set_values( 3, 0, 'blue');
+$new->set_values( 3, 1, 'gold');
+$new->legend( 'left', array('red' => 'red color', 'blue' => 'blue color', 'green' => 'red color', 'gold' => 'gold color'), 'white', '#fff8dc');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g130.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->set_values( 1, 0, '#808080');
+$new->set_values( 3, 0, '#98fb98');
+$new->set_values( 3, 0, '#ffb6c1');
+$new->set_values( 3, 0, '#f0e68c');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g124.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->set_values( 1, 0, '#808080', '10%');
+$new->set_values( 3, 0, '#98fb98', '30%');
+$new->set_values( 3, 0, '#ffb6c1', '30$');
+$new->set_values( 3, 0, '#f0e68c', '30%');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g125.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->set_values( 1, 0, '#808080', '10%');
+$new->set_values( 3, 1, '#98fb98', '30%');
+$new->set_values( 3, 0, '#ffb6c1', '30$');
+$new->set_values( 3, 0, '#f0e68c', '30%');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g126.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 400, 340, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->set_values( 1, 0, '#808080', '10%');
+$new->set_values( 3, 1, '#98fb98', '30%');
+$new->set_values( 3, 0, '#ffb6c1', '30$');
+$new->set_values( 3, 0, '#f0e68c', '30%');
+$new->legend( 'right', array('#808080' => 'legend', '#98fb98' => 'legend', '#ffb6c1' => 'legend', '#f0e68c' => 'legend'), 'white', '#fff8dc');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g127.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->set_values( 1, 1, 'red');
+$new->set_values( 3, 1, 'green');
+$new->set_values( 3, 1, 'blue');
+$new->set_values( 3, 1, 'gold');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g128.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 300, 400, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->set_values( 1, 1, 'red');
+$new->set_values( 3, 1, 'green');
+$new->set_values( 3, 1, 'blue');
+$new->set_values( 3, 1, 'gold');
+$new->legend( 'topleft', array('red' => 'red color', 'blue' => 'blue color', 'green' => 'red color', 'gold' => 'gold color'), 'white', '#fff8dc');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g129.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('pie', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('PIE Graph', '#000000', 7);
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->set_values( 1, 0, 'red');
+$new->set_values( 1, 0, 'green');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g131.png" alt="graph"/>
+</td>
+</tr>
+
+
+</table>

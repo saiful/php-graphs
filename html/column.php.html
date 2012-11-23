@@ -1,0 +1,252 @@
+<h1>Column graph </h1>
+<table width="98%" >
+<tr><th width="50%">Source</th><th>Image</th></tr>
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( -4, -2, -1, 1, 2, 4) ,0,  'red');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g57.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( -4, -2, -1, 1, 2, 4) ,0,  'red');
+$new->set_values( array( -3, -3, -2, 2, 3, 3), 0, 'blue');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g58.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array(  2, 3, 3, 3, 4, 3), 0, 'blue');
+$new->set_values( array(  1, 2, 4, 3, 2, 3) ,0,  'green');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'black', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g59.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( 10, 12, 13, 14, 16, 6, 3, 2), 0, 'blue');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'black', '', '', false );
+$new->points_on_axes('black', array('sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'));
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g60.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->legend( 'topright', array('red' => 'red color', 'blue' => 'blue color'), 'white', '#fff8dc');            
+$new->set_values( array( 10, 12, 13, 14, 16, 6, 3, 2), 0, 'blue');
+$new->set_values( array( 10, 12, 13, 12, 13, 6, 4, 2), 0, 'red');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'black', '', '', false );
+$new->points_on_axes('black', array('sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'));
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g61.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->set_values( array( 10, 12, 13, 14, 16, 6, 3, 2), 0, 'blue');
+$new->set_values( array( 10, 12, 13, 12, 13, 6, 4, 2), 0, 'red');
+$new->set_values( array( 10, 12, 13, 12, 13, 6, 4, 2), 0, 'green');
+$new->set_values( array( 10, 12, 13, 12, 13, 6, 4, 2), 0, 'black');
+$new->set_values( array( 0, 2, 1, 12, 3, 6, 4, 2), 0, 'gold');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'black', '', '', false );
+$new->points_on_axes('black', array('sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'));
+$new->legend( 'topright', array('red' => 'red color', 'blue' => 'blue color', 'green' => 'green color', 'black' => 'black color', 'gold' => 'gold color'), 'white', '#fff8dc');            
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g62.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16, 10, 12, 13, 14, 16), 0, 'blue');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'black', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g63.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+   <tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( 4, 2, 1, 1, 2, 4) ,0,  'red');
+$new->points_on_axes('black', array('sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'), array());
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g64.png" alt="graph"/>
+</td>
+</tr>
+
+
+ 
+                  <tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->border('#6b8e23', 1);
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( 10, 10, 10, 10, 10, 10, 10), 3, 'blue');
+$new->set_values( array( 9, 3, 2, 1, 2, 3, 4), 3, 'red');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'black', '', '', false );
+$new->points_on_axes('black', array('', '', '','sl 1', 'sl 2', 'sl 3', 'sl 4', 'sl 5', 'sl 6', 'sl 7', 'sl 8', 'sl 9'));
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g65.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2 ,3, 1, 1, 2, 2, 3, 2, 1), 0, 'red' );
+$new->set_values( array( 2, 3, 4, 2, 2, 3, 3, 4, 3, 2), 0, 'green' );
+$new->column_padding = 0;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'red', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g78.png" alt="graph"/>
+</td>
+</tr>
+
+
+ 
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2 ,3, 1, 1, 2, 2, 3, 2, 1), 0, 'red' );
+$new->set_values( array( 2, 3, 4, 2, 2, 3, 3, 4, 3, 2), 0, 'green' );
+$new->column_padding = 10;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'red', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g79.png" alt="graph"/>
+</td>
+</tr>
+
+
+ 
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('column', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2 ,3, 1, 1, 2, 2, 3, 2, 1), 0, 'red' );
+$new->set_values( array( 2, 3, 4, 2, 2, 3, 3, 4, 3, 2), 0, 'green' );
+$new->column_padding = 20;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'red', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g80.png" alt="graph"/>
+</td>
+</tr>
+
+
+ 
+</table>

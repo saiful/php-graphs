@@ -1,0 +1,73 @@
+<h1>Anti-aliasing</h1>
+<center>
+<img src="./images/aliasing.png" alt="graph"/>
+</center>
+<table width="98%" >
+<tr><th width="50%">Source</th><th>Image</th></tr>
+
+<tr>
+<td align="center">
+<textarea  wrap="off">
+$new = new graph('line', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Line Graph - anti-aliasing: OFF', '#000000', 7);
+$new->set_values( array( -1, 1, 5), array( -1, -1, 2 ), 'green', 'box' );
+$new->plot();    
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g144.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea  wrap="off">
+$new = new graph('line', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->enable_aliasing();
+$new->title('Line Graph - anti-aliasing: OFF', '#000000', 7);
+$new->set_values( array( -1, 1, 5), array( -1, -1, 2 ), 'green', 'box' );
+$new->plot();    
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g145.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+<tr>
+<td align="center">
+<textarea  wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph: Anti-aliasing: OFF', '#000000', 7);
+$new->set_values( array(1, 2, 3, 4, 5, 6, 7),  array(1, 2, 3, 4, 3, 4, 4), 'red' );
+$new->plot('g146.png');  
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g146.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+<tr>
+<td align="center">
+<textarea  wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->enable_aliasing();
+$new->title('Spline Graph: Anti-aliasing: OFF', '#000000', 7);
+$new->set_values( array(1, 2, 3, 4, 5, 6, 7),  array(1, 2, 3, 4, 3, 4, 4), 'red' );
+$new->plot('g146.png');
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g147.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+</table>

@@ -1,0 +1,260 @@
+<h1>Spline Graph</h1>
+<table width="98%" >
+<tr><th width="50%">Source</th><th>Image</th></tr>
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph', '#000000', 7);
+$new->set_values( array(1, 2, 3, 4, 5, 6, 7),  array(1, 2, 3, 2, 3, 4, 3), 'red' );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g105.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph (Sine function)', '#000000', 7);
+for( $i = -5; $i <= 5; $i++ ){
+    $x[] = $i; 
+    $y[] = sin( $i );   
+}
+$new->set_values( $x,  $y, 'red', 'fullcross' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g107.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph (Cosine function)', '#000000', 7);
+for( $i = -5; $i <= 5; $i++ ){
+    $x[] = $i; 
+    $y[] = cos( $i );   
+}
+$new->set_values( $x,  $y, 'red', 'fullcross' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g108.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph (Tg function)', '#000000', 7);
+for( $i = -5; $i <= 5; $i++ ){
+    $x[] = $i; 
+    $y[] = tan( $i );   
+}
+$new->set_values( $x,  $y, 'red', 'fullcross' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g109.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph (Hyperbolic sine)', '#000000', 7);
+for( $i = -5; $i <= 5; $i++ ){
+    $x[] = $i; 
+    $y[] = sinh( $i ); 
+}
+$new->set_values( $x,  $y, 'red', 'fullcross' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g110.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph (Hyperbolic cosine)', '#000000', 7);
+for( $i = -3; $i <= 3; $i++ ){
+    $x[] = $i; 
+    $y[] = cosh( $i ); 
+}
+$new->set_values( $x,  $y, 'red', 'fullcross' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g111.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph', '#000000', 7);
+$new->title('Sine and Cosine', '#000000', 3);
+for( $i = -5; $i <= 5; $i++ ){
+    $x[] = $i; 
+    $y[] = cos( $i ); 
+}
+$new->set_values( $x,  $y, 'blue' );
+$x = $y = array();
+for( $i = -5; $i <= 5; $i++ ){
+    $x[] = $i; 
+    $y[] = sin( $i ); 
+}
+$new->set_values( $x,  $y, 'green');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->legend( 'topright', array('blue' => 'Sine function', 'green' => 'Cosine function'), 'white', '#fff8dc');
+$new->plot();    
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g112.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph - quality settings', '#000000', 7);
+$new->set_values( array(-1, 0, 1, 2, 3),  array(-1, 4, -1, 4, -1), 'green');
+$new->spline_quality = 5;
+$new->set_values( array(-1, 0, 1, 2, 3),  array(-1, 4, -1, 4, -1), 'blue');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g113.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph', '#000000', 7);
+for( $i = -3; $i <= 3; $i++ ){
+    $x[] = $i; 
+    $y[] = cos( $i )*3; 
+}
+$new->spline_quality = 300;
+$new->set_values( $x,  $y, 'red' );
+$new->set_values(array(-3, 0, 3), array(-3,0,  -3 ), 'green');
+$new->set_values(array(-3, 0, 3), array(3, 0, 3 ), 'blue');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g114.png" alt="graph"/>
+</td>
+</tr>
+
+
+   <tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph exp', '#000000', 7);
+for( $i = -3; $i <= 3; $i++ ){
+    $x[] = $i; 
+    $y[] = exp( $i ); 
+}
+$new->set_values( $x,  $y, 'red', 'fullcross' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g115.png" alt="graph"/>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('spline', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Spline Graph SIN', '#000000', 7);
+for( $i = -30; $i <= 30; $i++ ){
+    $x[] = $i; 
+    $y[] = sin( $i ); 
+}
+$new->set_values( $x,  $y, 'red' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes();
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g116.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+</table>

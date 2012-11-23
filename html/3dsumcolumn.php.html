@@ -1,0 +1,197 @@
+<h1> 3D sum column graph</h1>
+<table width="98%" >
+<tr><th width="50%">Source</th><th>Image</th></tr>
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->set_values( array( 3, 2, 1, 0.4, 1, 2, 3), 0, 'blue' );
+$new->set_values( array( 0.3, 2, 3, 3.6, 2, 1, 0), 0, 'gold' );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g96.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->set_values( array( 9, 8, 7, 6, 5, 4, 3, 2, 1), 0, 'blue' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1), 0, 'gold' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), 0, 'green' );
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g97.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 4, 3, 2, 1), 0, 'blue' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1), 0, 'gold' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), 0, 'green' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), 0, 'red' );
+$new->column_padding = 40;
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g98.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 4, 3, 2, 1), 0, 'blue' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1), 0, 'gold' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), 0, 'green' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), 0, 'red' );
+$new->column_padding = 0;
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g99.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->set_values( array( 4, -1, -2, -1), 0, 'blue' );
+$new->set_values( array( 1, 2, -1, -1), 0, 'gold' );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g100.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->legend( 'right', array('green' => 'green', 'blue' => 'blue', 'red' => 'red', 'yellow' => 'yellow'), 'white', '#fff8dc');
+$new->set_values( array( 4, -1, -2, -1), 2, 'blue' );
+$new->set_values( array( 1, 2, -1, -1), 1, 'gold' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), 0, 'green' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ), 0, 'red' );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g101.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->legend( 'right', array('blue' => 'blue', 'gold' => 'gold'), 'white', '#fff8dc');
+$new->set_values( array( 4, 1, 2, 1), 0, 'blue' );
+$new->set_values( array( 1, 2, 1, 1), 0, 'gold' );
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g102.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->legend( 'right', array('blue' => 'blue', 'gold' => 'gold', 'green' => 'green'), 'white', '#fff8dc');
+$new->set_values( array( 4, 1, 2, 1, 3, 2, 5, 4, 2, 3, 4, 2), 0, 'blue' );
+$new->set_values( array( 1, 2, 1, 1, 3, 2, 4, 2, 1, 2, 3, 4), 0, 'gold' );
+$new->set_values( array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2 ), 0, 'green' );
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'));
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g103.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('3dsumcolumn', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('3D Sum Column Graph', '#000000', 7);
+$new->set_values( array( 1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 7, 6, 5, 4, 3,), 0, 'blue' );
+$new->set_values( array( 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3), 0, 'gold' );
+$new->set_values( array( 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3), 0, 'red' );
+$new->set_values( array( 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3), 0, 'green' );
+$new->column_padding = 4;
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( '#a9a9a9', '', '', false );
+$new->points_on_axes('black', array());
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g104.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+
+</table>

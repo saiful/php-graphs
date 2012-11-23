@@ -56,3 +56,10 @@ Error messages
 --------------
 
 ![Alt text](http://grafy.zaachi.com/images/g122.png "Optional title")
+
+
+How to make
+----------
+
+Clone a repository and open a samples in folder __html__
+

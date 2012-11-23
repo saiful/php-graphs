@@ -1,0 +1,142 @@
+<h1> Impulse graph</h1>
+<table width="98%" >
+<tr><th width="50%">Source</th><th>Image</th></tr>
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('impulse', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->title('Impulse graph', '#000000', 7);
+$new->set_values( array( -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -0, 1, 2, 2, 1, 0, -1, -1, 0  ), -4, 'red', 'box');
+$new->plot();  
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g26.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('impulse', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->set_shadow('#8fbc8b', 5);
+$new->border('#6b8e23', 1);
+$new->title('Impulse graph', '#000000', 7);
+$new->set_values( array( -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -0, 1, 2, 2, 1, 0, -1, -1, 0  ), -4, 'red', 'box');
+$new->paint_axes( 'green', '', 'Impuls', false );    
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g27.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('impulse', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->set_shadow('#8fbc8b', 5);
+$new->border('#6b8e23', 1);
+$new->title('Impulse graph', '#000000', 7);
+$new->set_values( array( -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -0, 1, 2, 2, 1, 0, -1, -1, 0  ), -4, 'red', 'box');
+$new->paint_axes( 'green', '', 'Impuls', false );
+$new->legend( 'bottomright', array('red' => 'Impulse Graph'), '#fff8dc', 'white');
+$new->plot();
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g28.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('impulse', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->set_shadow('#8fbc8b', 5);
+$new->border('#6b8e23', 1);
+$new->title('Impulse graph', '#000000', 7);
+$new->legend( 'top', array('red' => 'Impulse Graph'), '#fff8dc', 'white');
+$new->set_values( array( -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -0, 1, 2, 2, 1, 0, -1, -1, 0  ), -4, 'red', 'box');
+$new->paint_axes( 'green', '', 'Impuls', false );      
+$new->plot();                 
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g29.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('impulse', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->set_shadow('#8fbc8b', 5);
+$new->border('#6b8e23', 1);
+$new->title('Impulse graph', '#000000', 7);
+$new->legend( 'top', array('red' => 'Graph line 1', 'black' => 'Graph line 2'), '#fff8dc', 'white');
+$new->set_values( array( -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -0, 1, 2, 2, 1, 0, -1, -1, 0  ), -4, 'red', 'box');
+$new->set_values( array( 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -4, -3, -2, -1, 0, 1, 2, 3, 3, 2, 1, 0, -1, -2, -2, -1, 0, 1, 1, 0  ), -4, 'black', 'fullcross');
+$new->paint_axes( 'green', '', 'Impuls', false );       
+$new->plot();   
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g30.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('impulse', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->set_shadow('#8fbc8b', 5);
+$new->border('#6b8e23', 1);
+$new->title('Impulse graph', '#000000', 7);
+$new->set_values( array( 0, 1, 2, 3, 4, 4, 3, 2, 1, 0, -1, -2, -3, -3, -2, -1, -0, 1, 2, 2, 1, 0, -1, -1, 0  ), 4, 'red', 'box');
+$new->set_values( array( 0, -1, -2, -3, -4, -4, -3, -2, -1, 0, 1, 2, 3, 3, 2, 1, 0, -1, -2, -2, -1, 0, 1, 1, 0  ), -4, 'black', 'fullcross');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'green', '', 'Impuls', false );
+$new->points_on_axes('red', array(), 'auto');
+$new->legend( 'topright', array('red' => 'Graph line 1', 'black' => 'Graph line 2'), '#fff8dc', 'white');
+$new->plot();       
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g31.png" alt="graph"/>
+</td>
+</tr>
+
+
+<tr>
+<td align="center">
+<textarea cols="70" rows="20" wrap="off">
+$new = new graph('impulse', 400, 400, '#fffeff', '8x13iso.gdf');
+$new->set_shadow('#8fbc8b', 5);
+$new->border('#6b8e23', 1);
+$new->title('Impulse graph', '#000000', 7);
+$new->set_values( array( -5, -4, -3, -2, -1, 0 ), -10, 'red', 'box');
+$new->set_values( array( 1, 2, 3, 4, 5  ), -4, 'green', 'box');
+$new->set_values( array( 6, 7, 8, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0), 1, 'black', 'fullcross');
+$new->set_values( array( -1, -2, -3, -4, -5, -6), 15, 'blue', 'fullcross');
+$new->paint_lines('#f5f5f5', 'lines', 'lines');
+$new->paint_axes( 'green', '', 'Impuls', false );
+$new->legend( 'bottom', array('red' => 'Part 1', 'green' => 'Part 2', 'black' => 'Part 3', 'blue' => 'Part 4'), '#fff8dc', 'white');
+$new->plot();       
+</textarea>
+</td>
+<td align="center">
+<img src="./images/g32.png" alt="graph"/>
+</td>
+</tr>
+
+
+
+</table>
